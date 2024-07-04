@@ -1,0 +1,57 @@
+사용카운트
+	 커널 오브젝트는 프로세스가 아니라 커널에 의해 소유된다.
+	프로세스가 특정 함수를 통해 커널 오브젝트를 생성한 후 종료된다 하더라도 반드시 생성된 커널 오브젝트가 프로세스와 함께 삭제되는 것은 아니라는 의미이다.
+	기억해야 할 점은 커널 오브젝트는 자신을 생성한 프로세스보다 더 오랫동안 삭제되지 않고 남아 있을 수 있다는 것이다.
+
+	 각 커널 오브젝트는 내부적으로 사용 카운트(usage count)값을 유지하고 있기에 커널은 이 값을 통해 얼마나 많은 프로세스들이 커널 오브젝트를 사용하고 있는지 알 수 있다.
+	사용 카운트는 모든 커널 오브젝트 타입이 가지고 있는 공통적인 값이다. 커널 오브젝트가 최초로 생성되면 이 값은 1로 설정된다.
+	다른 프로세스가 이미 실행된 커널 오브젝트에 접근 권한을 획득하면 사용 카운트가 증가한다(+1).
+	프로세스가 종료되면 커널은 이 프로세스가 사용하고 있던 모든 커널 오브젝트의 사용 카운트를 감소 시키며, 만일 이 값이 0이 되면 커널 오브젝트는 삭제된다.
+
+	"어떤 프로세스도 사용하지 않는 커널 오브젝트는 시스템 상에서 남아 있을 수 없다."
+
+보안
+	 커널 오브젝트는 보안 디스크립터(security descriptor)를 통해 보호될 수 있다. 
+	보안 디스크립터는 누가 커널 오브젝트를 소유하고 있으며, 어떤 그룹과 사용자들에 의해 접근되거나 사용될 수 있는지,
+	혹은 어떤 그룹과 사용자들에 대해 접근이 제한되어 있는지에 대한 정보를 가지고 있다.
+	보안 디스크립터는 서버 애플리케이션을 개발할 때 주로 많이 사용된다.
+
+	 커널 오브젝트를 생성하는 거의 대부분의 함수들은 SECURITY_ATTRIBUTES 구조체에 대한 포인터를 인자로 받아들인다.
+
+	ex) HANDLE WINAPI CreateFileMappingA(
+    _In_     HANDLE hFile,
+    _In_opt_ LP SECURITY_ATTRIBUTES lpFileMappingAttributes, << 요기 LP는 long Pointer의 약자
+    _In_     DWORD flProtect,
+    _In_     DWORD dwMaximumSizeHigh,
+    _In_     DWORD dwMaximumSizeLow,
+    _In_opt_ LPCSTR lpName
+    );
+
+	 대부분의 애플리케이션에서는 현재 프로세스의 보안 토큰을 근간으로 하는 기본 보안 디스크립터를 사용하기 때문에 커널 오브젝트 생성 시 단순히 NULL 값을 전달하면 된다.
+	but. SECURITY_ATTRIBUTES 구조체를 할당하고 초기화한 후 구조체의 주소를 넘겨줄 수 있다.
+	SECURITY_ATTRIBUTES의 구조체를 보자
+
+	typedef struct _SECURITY_ATTRIBUTES {
+    DWORD nLength;
+    LPVOID lpSecurityDescriptor; << 이 부분만 보안에 관련이 있음!!
+    BOOL bInheritHandle;} SECURITY_ATTRIBUTES, *PSECURITY_ATTRIBUTES, *LPSECURITY_ATTRIBUTES;
+
+	 그런데 신기한 점은 이 구조체가 SECURITY_ATTRIBUTES로 불리지만, 구조체 내의 lpSecurityDescriptor 멤버만 보안과 관련이 있다.
+	만일 오브젝트 생성 시 커널 오브젝트의 접근 권한을 제한하고자 한다면 보안 디스클비터를 생성하고 다음과 같이 초기화를 해야한다.
+
+	SECURITY_ATTRIBUTES sa; // 이름 단축하기
+	sa.nLength = sizeof(sa); // 버전 확인을 위한 정보
+	sa.lpSecurityDescriptor = pSD; // 초기화된 SD 주소
+	sa.bInheritHandle = FALSE; // 추후 논의
+	HANDLE hFileMapping - CreateFileMapping (INVALID_HANDLE_VALUE, &sa, PAGE_READWRITE, 0, 1024, TEXT("MyFileMapping"));
+	
+	이미 존재하는 커널 오브젝트를 이용하려면(새로운 오브젝트을 생성하는 대신) 먼저 오브젝트를 이용하여 어떤 작업을 수행하려는지 알려주어야 한다.
+
+	 개발자가 저지르는 가장 큰 실수 중의 하나가 알맞는 보안 접근 플래그를 쉽게 간과한다는 것이다.
+	올바른 플래그를 사용하면 다른 윈도우 버전으로의 포팅이 더욱더 간편해진다.
+	
+	 애플리케이션들은 커널 오브젝트 외에도 메뉴, 윈도우, 마우스 커서, 브러시, 폰트와 같은 또 다른 형태의 오브젝트르 다루기도 한다.
+	이러한 오브젝트들은 유저 오브젝트나 그래픽 디바이스 인터페이스 오브젝트이며, 커널 오브젝트와 서로 구분이 된다.
+	구분하는 방법은 간단한데 "보안 특성으 지정하는 매개변수"가 있는지 확인하는 것이다 (lpSecurityDescriptor)
+
+>>> next process of Kernel Object Handle Table
