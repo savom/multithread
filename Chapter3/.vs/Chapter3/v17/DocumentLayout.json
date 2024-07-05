@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\Sharing of kernel objects between processes||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|solutionrelative:Kernel Object\\Sharing of kernel objects between processes||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\process of Kernel Object Handle Table||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|solutionrelative:Kernel Object\\process of Kernel Object Handle Table||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\FILEAPI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\Sharing of kernel objects between processes||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|solutionrelative:Kernel Object\\Sharing of kernel objects between processes||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\03-1 What\u0027s Kernel Object||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,16 +19,19 @@
       "RelativeMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|solutionrelative:Kernel Object\\Usage count \u0026 security||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\WINBASE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\SYNCHAPI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\minwinbase.h||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\PROCESSTHREADSAPI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\processthreadsapi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F73B7-5914-492C-94B5-0E793C9236E8}|Kernel Object\\Kernel Object.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\MINWINBASE.H||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\synchapi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\fileapi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,11 +41,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "WinBase.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
@@ -54,12 +54,11 @@
               "ViewState": "AQIAAPkUAAAAAAAAAAAjwAsVAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-04T11:24:06.253Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "minwinbase.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\minwinbase.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\minwinbase.h",
@@ -68,12 +67,11 @@
               "ViewState": "AQIAACkAAAAAAAAAAADwvy0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-04T11:27:51.869Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "processthreadsapi.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\processthreadsapi.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\processthreadsapi.h",
@@ -82,12 +80,11 @@
               "ViewState": "AQIAAK8AAAAAAAAAAAAjwMEAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-04T13:17:45.114Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "synchapi.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\synchapi.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\synchapi.h",
@@ -96,12 +93,11 @@
               "ViewState": "AQIAAH0BAAAAAAAAAAAjwIUBAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-04T13:28:27.12Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "fileapi.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\fileapi.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\fileapi.h",
@@ -110,12 +106,11 @@
               "ViewState": "AQIAADwAAAAAAAAAAAAjwFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-04T13:35:17.803Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "03-1 What\u0027s Kernel Object",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\03-1 What\u0027s Kernel Object",
               "RelativeDocumentMoniker": "Kernel Object\\03-1 What\u0027s Kernel Object",
@@ -124,12 +119,11 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-04T11:22:10.529Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Usage count \u0026 security",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\Usage count \u0026 security",
               "RelativeDocumentMoniker": "Kernel Object\\Usage count \u0026 security",
@@ -138,18 +132,17 @@
               "ViewState": "AQIAAC4AAAAAAAAAAAAwwDgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-04T12:16:03.74Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "process of Kernel Object Handle Table",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\process of Kernel Object Handle Table",
               "RelativeDocumentMoniker": "Kernel Object\\process of Kernel Object Handle Table",
               "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\process of Kernel Object Handle Table",
               "RelativeToolTip": "Kernel Object\\process of Kernel Object Handle Table",
-              "ViewState": "AQIAADcAAAAAAAAAAAAwwFwAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-04T12:39:29.601Z",
               "IsPinned": true,
@@ -157,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Sharing of kernel objects between processes",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\multithread\\Chapter3\\Kernel Object\\Sharing of kernel objects between processes",
               "RelativeDocumentMoniker": "Kernel Object\\Sharing of kernel objects between processes",
