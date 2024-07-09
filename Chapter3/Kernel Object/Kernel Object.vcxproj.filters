@@ -27,6 +27,9 @@
     <ClInclude Include="Kernel Object.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\example\source\03-Singleton\Resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Kernel Object.cpp">
@@ -44,10 +47,16 @@
     <ClCompile Include="Sharing of kernel objects between processes">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\example\source\03-Singleton\Singleton.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Kernel Object.rc">
       <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\example\source\03-Singleton\Singleton.rc">
+      <Filter>소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>

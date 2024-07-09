@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\example\source\03-Singleton\Resource.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Kernel Object.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\example\source\03-Singleton\Singleton.cpp" />
     <ClCompile Include="03-1 What%27s Kernel Object" />
     <ClCompile Include="Kernel Object.cpp" />
     <ClCompile Include="process of Kernel Object Handle Table" />
@@ -140,6 +142,7 @@
     <ClCompile Include="Sharing of kernel objects between processes" />
   </ItemGroup>
   <ItemGroup>
+    <ResourceCompile Include="..\..\example\source\03-Singleton\Singleton.rc" />
     <ResourceCompile Include="Kernel Object.rc" />
   </ItemGroup>
   <ItemGroup>
